@@ -8,10 +8,10 @@ import dlib
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def index():
     """Video streaming home page."""
-    return render_template('index.html')    
+    return render_template("index.html")    
 
 
 
@@ -150,7 +150,7 @@ def gen():
             
   
 
-@app.route('/video_feed')
+@app.route('/video_feed' , methods = ['GET' , 'POST'])
 def video_feed():
     """Video streaming route. Put this in the src attribute of an img tag."""
     return Response(gen(),
