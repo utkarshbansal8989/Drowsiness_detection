@@ -46,7 +46,7 @@ Before running the program, setup the Flask.
 To run the code, type `python app.py`
 
 ```
-python Drowsiness_Detection.py
+python app.py
 ```
 
 ## References 🔱
